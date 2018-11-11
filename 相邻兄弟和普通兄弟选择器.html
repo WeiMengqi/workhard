@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>组合选择器之二</title>
+		<style type="text/css">
+			/*相邻兄弟选择器*/
+			h3 + p {
+				font-weight: bold;
+			}
+			/*普通兄弟选择器*/
+			h3 ~ p{
+				background: #ccc;
+			}
+		</style>
+	</head>
+	<body>
+		<h3>相邻兄弟选择器</h3>
+		<p>相邻兄弟用+号</p>
+		<hr />
+		<div>CSS相邻兄弟选择器</div>
+		<p>相邻兄弟结合符</p>
+		<p>可选择紧接在另一元素后的元素，且二者有相同的父元素</p>
+	</body>
+</html>
