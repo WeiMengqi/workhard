@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>组合选测器之一</title>
+		<style type="text/css">
+			/*多元素选测器*/
+			p,div{ font-size: 14px; color: blue;}
+			/*后代选测器*/
+			div p{ background-color: #CCCCCC;}
+			/*子选择器*/
+			div>p{
+				font-weight: bold;
+				border: solid2px #066;
+			}
+		</style>
+	</head>
+	<body>
+		<h4>组合选择器的使用</h4>
+		<hr />
+		<p>多元素选测器用于同时选取多个元素</p>
+		<div>如需为不同的元素设置相同的格式，请用逗号来分隔每个元素</div>
+		<hr />
+		<div>
+			<p>在后代选择器中，规则左边的选择器一端包括两个或多个用空格分隔的选择器。选择器之间的空格是一种结合符（combinator)</p>
+			<span>后代选择器的功能极其强大。<p>有了它，可以完成很多任务。</p></span>
+		</div>
+	</body>
+</html>
